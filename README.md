@@ -28,9 +28,9 @@ Install oh-my-zsh by running on the command on this page: [Install oh-my-zsh](ht
 1. Install Git
 `brew install git`
 
-2. Set global configuration for Git
-`git config --global user.name "Name"`
-`git config --global user.email "username@emai.com"`
+2. Set global configuration for Git  
+`git config --global user.name "Name"`  
+`git config --global user.email "username@emai.com"`  
 
 3. Create SSH Keys for both BitBucket (assuming BitBucket is the primary account) and Github
 `ssh-keygen -t rsa -C "bitbucket email"`
@@ -73,16 +73,16 @@ Host *
 ```
 
 6. Add the keys to SSH
-Run:
-`ssh-add ~/.ssh/id_rsa
+Run:  
+`ssh-add ~/.ssh/id_rsa  
  ssh-add ~/.ssh/id_rsa_gh`
 
-7. Create BitBucket and Github directory
+7. Create BitBucket and Github directory  
 `cd ~/Documents`  
 `mkdir bitbucket`  
 `mkdir github`  
 
-8. Clone repos to test
+8. Clone repos to test  
 `cd ~/Documents/bitbuckets`  
 `git clone <bitbucket_repo_location>`  
 

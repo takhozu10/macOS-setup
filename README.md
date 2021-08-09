@@ -54,21 +54,23 @@ Run `vi ~/.ssh/config`
 
 Create the file with the following information.
 Replace <username> with the respective username for the repos.
-`Host *
-   UseKeychain yes
-   AddKeysToAgent yes
+```
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
 
- #BitBucket (primary)
-   Host bb
-   HostName bitbucket.org
-   User <username>
-   IdentityFile ~/.ssh/id_rsa
+#BitBucket (primary)
+  Host bb
+  HostName bitbucket.org
+  User <username>
+  IdentityFile ~/.ssh/id_rsa
 
 #Github (secondary)
   Host gh
   HostName github.com
   User <username>
-  IdentityFile ~/.ssh/id_rsa_gh`
+  IdentityFile ~/.ssh/id_rsa_gh
+```
 
 6. Add the keys to SSH
 Run:
@@ -76,13 +78,13 @@ Run:
  ssh-add ~/.ssh/id_rsa_gh`
 
 7. Create BitBucket and Github directory
-`cd ~/Documents`
-`mkdir bitbucket`
-`mkdir github`
+`cd ~/Documents`  
+`mkdir bitbucket`  
+`mkdir github`  
 
 8. Clone repos to test
-`cd ~/Documents/bitbuckets`
-`git clone <bitbucket_repo_location>`
+`cd ~/Documents/bitbuckets`  
+`git clone <bitbucket_repo_location>`  
 
-`cd ~/Docuemtns/github`
-`git clone <github_repo_location>`
+`cd ~/Docuemtns/github`  
+`git clone <github_repo_location>`  
